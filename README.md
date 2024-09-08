@@ -5,3 +5,6 @@ This almost entirely consists of scenes generated using the library [Manim](http
 Note, while the library Manim itself is open source and under the MIT license, the contents of this project are intended only to be used for 3Blue1Brown videos themselves.
 
 Copyright © 2022 3Blue1Brown
+
+
+

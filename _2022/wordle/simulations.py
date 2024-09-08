@@ -1,6 +1,14 @@
 from manim_imports_ext import *
 from tqdm import tqdm as ProgressDisplay
 from scipy.stats import entropy
+import math 
+import itertools as it
+import json 
+import os 
+import random
+import numpy as np
+from math import sigmoid
+
 
 
 MISS = np.uint8(0)
@@ -11,6 +19,7 @@ DATA_DIR = os.path.join(
     os.path.dirname(os.path.realpath(__file__)),
     "data",
 )
+
 SHORT_WORD_LIST_FILE = os.path.join(DATA_DIR, "possible_words.txt")
 LONG_WORD_LIST_FILE = os.path.join(DATA_DIR, "allowed_words.txt")
 WORD_FREQ_FILE = os.path.join(DATA_DIR, "wordle_words_freqs_full.txt")
@@ -38,6 +47,7 @@ def get_word_list(short=False):
 
 
 def get_word_frequencies(regenerate=False):
+    '''from a given file ("wordle_words_freqs_full.txt"), return a dictionary of words and their frequencies ("freq_map.json")'''
     if os.path.exists(WORD_FREQ_MAP_FILE) or regenerate:
         with open(WORD_FREQ_MAP_FILE) as fp:
             result = json.load(fp)
@@ -92,6 +102,7 @@ def get_true_wordle_prior():
         (w, int(w in short_words))
         for w in words
     )
+
 
 
 # Generating color patterns between strings, etc.
