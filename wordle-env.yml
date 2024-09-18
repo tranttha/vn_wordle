@@ -1,0 +1,47 @@
+name: wordle-env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - bzip2=1.0.8=h80987f9_6
+  - ca-certificates=2024.7.2=hca03da5_0
+  - expat=2.6.3=h313beb8_0
+  - libcxx=14.0.6=h848a8c0_0
+  - libffi=3.4.4=hca03da5_1
+  - ncurses=6.4=h313beb8_0
+  - openssl=3.0.15=h80987f9_0
+  - pip=24.2=py312hca03da5_0
+  - python=3.12.5=h99e199e_1
+  - readline=8.2=h1a28f6b_0
+  - setuptools=72.1.0=py312hca03da5_0
+  - sqlite=3.45.3=h80987f9_0
+  - tk=8.6.14=h6ba3021_0
+  - tzdata=2024a=h04d1e81_0
+  - wheel=0.44.0=py312hca03da5_0
+  - xz=5.4.6=h80987f9_1
+  - zlib=1.2.13=h18a0788_1
+  - pip:
+      - asttokens==2.4.1
+      - decorator==5.1.1
+      - executing==2.1.0
+      - ipython==8.27.0
+      - jedi==0.19.1
+      - jinja2==3.1.4
+      - jsonpickle==3.3.0
+      - markupsafe==2.1.5
+      - matplotlib-inline==0.1.7
+      - networkx==3.3
+      - numpy==2.1.1
+      - parso==0.8.4
+      - pexpect==4.9.0
+      - prompt-toolkit==3.0.47
+      - ptyprocess==0.7.0
+      - pure-eval==0.2.3
+      - pygments==2.18.0
+      - scipy==1.14.1
+      - six==1.16.0
+      - stack-data==0.6.3
+      - tqdm==4.66.5
+      - traitlets==5.14.3
+      - wcwidth==0.2.13
+prefix: /Users/hoangtran/miniconda3/envs/wordle-env
